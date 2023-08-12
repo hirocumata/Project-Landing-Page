@@ -11,7 +11,9 @@ body{
 
 :root{
     --font:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --header: #1f2937
+    --header: #1f2937;
+    --button1: #3A3A3A;
+    --button2: orange;
 }
 
 a{
@@ -54,11 +56,12 @@ a:hover{
     }
     .two{
         width: 30%;
-        height: 60%;
+        height: 50%;
         background-color: grey;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 8px;
     }
     .h1{
         font-size: 48px;
@@ -72,11 +75,16 @@ a:hover{
         width: fit-content;
         padding: 0px 15px;
         font-size: 20px;
-        background-color: rgb(241, 168, 10);
-        border-radius: 10px;
+        background-color: var(--button2);
+        border-radius: 8px;
         font-size: 20px;
-        color: black;
-        border-width: 2px;
+        color: var(--button1);
+        border-style: none;
+    }
+
+    .button:hover{
+        background-color: var(--button1);
+        color: var(--button2);
     }
 }
 
@@ -85,19 +93,106 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 250px;
+    height: 47vh;
+    padding: 10px 0px; 
 
     .two{
         display: flex;
         flex-direction: row;
-
-        img{
-            width: 100px;
-            height: 100px;
+        
+        .two-one{
+            display: flex ;
+            flex-direction: column;
+            padding: 15px;
+            gap: 15px;
+            align-content: space-evenly;
+            max-width: 165px;
+            
+            
+            .img{
+                background-color: #3A3A3A;
+                width: 160px;
+                height: 160px;
+                border-radius: 8px;
+            }
+            .h3{
+                margin: 5%;
+            }
         }
     }
-
     
+    
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh; 
+    margin-top: 30vh;
+    width: 50%; 
+    font-size: 36px; 
+    
+    .two{
+        align-self: flex-end;
+        width: 50%; 
+        font-size: 30px;
+        color: var(--button2);
+        margin-top: 2vh;
+    }
+}
+
+
+.four{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20vh;
+    width: 100%;
+    padding: 10px 0px; 
+    background-color: var(--header);
+    
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        padding: 0px 15px;
+        display: flex;
+        height: 130px;
+        width: 50vh;
+        background-color: var(--button2);
+        border-radius: 8px;
+    }
+    .button{
+        width: fit-content;
+        padding: 5px 15px;
+        font-size: 20px;
+        background-color: var(--button2);
+        border-radius: 8px;
+        font-size: 20px;
+        color: var(--button1);
+        height: max-content;
+        width: max-content;
+        border-width: 1px;
+        border-color: black;
+    }
+
+    .button:hover{
+        background-color: black;
+        color: var(--button2);
+        
+    }
+}
+
+.footer{
+    display: flex;
+    justify-items: center;
+    margin-top: 5vh;
+    gap: 5vh;
 }
 
 
